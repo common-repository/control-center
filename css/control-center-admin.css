@@ -1,0 +1,40 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body.toplevel_page_control-center h2 {
+	font-family: 'montserrat', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 0 0 .5em 0;
+	text-shadow: 0 0 25px #fafafa;
+}
+
+.control_center_admin_page .plugin-card-wrapper .module {
+	min-height: 170px;
+}
+
+.control_center_admin_page .plugin-card-wrapper .module .action-links {
+	margin-left: 0;
+}
+
+.control_center_admin_page .plugin-card-wrapper .module .plugin-action-buttons {
+	margin: 1em 0;
+}
+
+.control_center_admin_page .plugin-card-wrapper .module .plugin-action-buttons .button-disabled:hover {
+	cursor: pointer;
+	border-color: #ccc !important;
+	color: #777 !important;
+}
+
+.control_center_admin_page .plugin-card-top {
+	min-height: 0;
+}
+
+.control_center_admin_page .suggested-pairings {
+	margin-top: 3em;
+}

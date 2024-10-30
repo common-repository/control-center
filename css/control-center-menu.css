@@ -1,0 +1,16 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.icon-cc-control-center-icon:before {
+	content: "\f238";
+}
+
+#toplevel_page_control-center-keyword-performance .wp-menu-image:before {
+  content: '\f238' !important;
+}
+
+#adminmenu .toplevel_page_control-center-keyword-performance .wp-menu-image img {
+	padding: 8px 0 0;
+}

@@ -1,0 +1,299 @@
+/**
+ * All of the CSS for your dashboard-specific functionality should be
+ * included in this file.
+ */
+
+div.keyword-performance-page {}
+
+#filter-by-engine {}
+
+#filter-by-engine option {}
+
+/* Status Styles */
+tr.active-keyword {}
+
+tr.paused-keyword {}
+
+li.active {}
+
+li.location.paused:before {
+	display: inline-block;
+	font-family:'dashicons';
+	content:"\f523";
+	word-wrap:break-word;
+	vertical-align: bottom;
+	margin-left: -13px;
+}
+
+li.paused,
+li.change.negative.paused .dashicons,
+li.change.positive.paused .dashicons,
+li.page.paused a {
+	color:#CCC;
+}
+
+/* Table Headers */
+th#keyword {
+	width: 25%;
+}
+
+th#location {
+	width: 15%;
+	padding-left:14px;
+}
+
+th#rank,
+th#rank7,
+th#rank30,
+th#engine {
+	width: 80px;
+}
+
+th#rank90,
+th#volatility,
+th#change {
+	width: 100px;
+}
+
+th#average_rank {
+	width: 90px;
+}
+
+th#change,
+th#rank7,
+th#rank30,
+th#rank90,
+th#average_rank,
+th#volatility {
+	text-align: center;
+}
+
+th#page {
+	width: 25%;
+}
+
+/* Table Rows */
+span.dashicons.dashicons-hidden,
+span.dashicons.dashicons-update {
+	color: #ccc;
+}
+
+ul {
+	margin: 0;
+}
+
+tr.no-items td {
+	text-align: center;
+	padding: 2em 10px;
+}
+
+td li {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+td.keyword-cell {}
+
+td.location-cell {
+	padding-left: 14px;
+}
+
+	ul.locations {}
+
+		li.location {}
+
+td.rank-cell,
+td.change-cell,
+td.rank7-cell,
+td.rank30-cell,
+td.rank90-cell,
+td.average_rank-cell,
+td.volatility-cell {
+	text-align: center;
+}
+
+	ul.change {}
+
+		li.change {
+			margin-left: 4px;
+		}
+
+		li.change span.change {
+			font-size: 11px;
+			margin-left: 4px;
+		}
+
+		li.change.positive span.change {
+			color:#5da423;
+		}
+
+			li.change.positive span.change:before {
+				font-family: 'dashicons';
+				content: "\f342";
+				line-height: 16px;
+				vertical-align: middle;
+			}
+
+		li.change.negative span.change {
+			color:#c60f13;
+
+		}
+
+			li.change.negative span.change:before {
+				font-family: 'dashicons';
+				content: "\f346";
+				line-height: 16px;
+				vertical-align: middle;
+			}
+
+		li.change.paused {
+			color: #CCC;
+		}
+
+td.engine-cell {}
+
+	ul.engines {}
+
+		li.engine {}
+
+td.page-cell {}
+
+	ul.engines {}
+
+		li.engine {}
+
+/*
+ * Keyword Rankings Edit Table
+ */
+table.keywords td select {
+	max-width: 100%;
+	white-space: nowrap;
+}
+
+/*
+ * Keyword Rankings Chart Table
+ */
+.rank-chart h3 {
+	line-height: 2 !important;
+}
+
+#date-range {
+	float: right;
+}
+
+#date-range input.datepicker {
+	width: 90px;
+	font-weight: normal;
+}
+
+table.keyword-rankings .rank {
+	text-align: center;
+}
+
+.current_date {
+	font-style: italic;
+	color: #999;
+}
+
+/*
+ * Keyword Bulk Add
+ */
+textarea[name=keyword] {
+	width: 100%;
+	height: 320px;
+}
+
+.my-account-remaining {
+	line-height: 30px;
+	margin: 0 1em;
+}
+
+.misc-pub-requests-remaining:before {
+	content: '\f110';
+	top: -1px;
+	font: 400 20px/1 dashicons;
+	speak: none;
+	display: inline-block;
+	padding: 0 2px 0 0;
+	top: 0;
+	left: -1px;
+	position: relative;
+	vertical-align: top;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration: none!important;
+}
+
+.misc-pub-requests-remaining .upgrade-link {
+	margin: 0 0 .5em 25px;
+	display: inline-block;
+}
+
+/* Upgrade Ad Styles */
+
+.upgrade {
+	background: white;
+	border: 1px solid #e8e8e8;
+	margin: 2em 0px;
+}
+
+	#upgrade-wide .upgrade-wrapper {
+		height: 19em;
+		width: auto;
+		background-image: url(/wp-content/plugins/control-center/modules/keyword-performance/admin/images/graph-wide.svg);
+		background-position: 0% 100%;
+		background-size: cover;
+	}
+
+	#TB_ajaxContent {
+		background-image: url(/wp-content/plugins/control-center/modules/keyword-performance/admin/images/graph-wide.svg);
+		background-position: 50% 100%;
+		background-size: cover;
+	}
+
+	#upgrade-wide .upgrade-content {
+		padding: 4em 0 0 4em;
+	}
+
+	#TB_ajaxContent .upgrade-content {
+		padding: 3em 0 0 2em;
+	}
+
+		.upgrade-text-top {
+			font-size: 2em;
+			font-weight: 900;
+		}
+
+		.upgrade-text-bottom {
+			font-size: 1.5em;
+			margin: 0.75em 0px 1.3em;
+		}
+
+			#TB_ajaxContent .upgrade-text-bottom {
+				font-size: 1.25em;
+			}
+
+		.upgrade-content .button,
+		.upgrade-content .button:active,
+		.upgrade-content .button:hover,
+		.upgrade-content .button:visited {
+			color: #000;
+			font-weight: bold;
+			background: #F9C801;
+			border-color: #E4A700;
+			box-shadow: 0px 1px 0px #E4A700;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 13px;
+			cursor: pointer;
+			border-radius: 3px;
+			white-space: nowrap;
+			height: 30px;
+			line-height: 28px;
+			padding: 0 12px 2px;
+		}
+
+		.upgrade-content .button:hover {
+			background: #FECD06;
+		}
